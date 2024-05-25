@@ -97,6 +97,14 @@ const Head = () => {
     }
   };
 
+const handleSuggestionClick = (s) => {
+       setSearchQuery(s);
+    setShowSuggestion(false);
+    setTimeout(() => {
+      handleSubmit(new Event("submit"));
+    }, 0); 
+  };
+
   return (
     <>
       {/* {loading && <LinearProgress variant="determinate" />} */}
@@ -168,6 +176,7 @@ const Head = () => {
                       className={`py-2 ps-2 flex items-center hover:bg-gray-100 ${
                         index === focusedIndex ? "bg-gray-200" : ""
                       }`}
+                     onMouseDown={() => handleSuggestionClick(s)}
                     >
                       <span className="px-3">
                         <IoSearchOutline />
