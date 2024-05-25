@@ -8,7 +8,7 @@ export const COMMENT_SECTION_API =
   "https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&maxResults=250&videoId=";
 
 export const YOUTUBE_SEARCH_API =
-  "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
+  "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
 
 export const SEARCH_QUERY_API =
   "https://youtube.googleapis.com/youtube/v3/search?part=snippet&videoDuration=medium&maxResults=150&type=video&key=" +
